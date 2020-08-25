@@ -359,8 +359,23 @@ body{
 }
 
 .current{
-    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.current p{
+    text-align: right;
     color: #fff;
+    position: relative;
+    right: -75%;
+    animation: slide 15s ease-in forwards infinite;
+}
+
+@keyframes slide{
+    to{
+        right: 100%;
+    }
 }
 
 /* Responsive */
