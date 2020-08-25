@@ -214,31 +214,90 @@ body{
 
 .controls{
     display: block;
-    background: #35C930;
+    background: RGBA(53,201,48,0.42);
     width: 500px;
-    margin: 40px auto;
+    margin: 40px auto 25px auto;
+    padding: 20px 0;
+    border-radius: 40px;
 }
 
 .main-controls{
     display: flex;
     justify-content: center;
-    padding: 20px 30px;
+    margin-bottom: 25px;
 }
 
 .main-controls > div{
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
-.main-controls > div i{
-    font-size: 1.8rem;
+.main-controls > div:nth-child(2) i,
+.main-controls > div:nth-child(3) i,
+.main-controls > div:nth-child(4) i{
+    font-size: 1.6rem;
     color: #fff;
     cursor: pointer;
+}
+
+.main-controls > div:nth-child(1) i,
+.main-controls > div:nth-child(5) i{
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 4px;
 }
 
 .play-pause i:nth-child(2){
     display: none;
 }
 
+.seeker{
+    display: flex;
+    width: 400px;
+    margin: 0 auto 25px auto;
+}
+
+.seeker .dslider{
+    width: 100%;
+    height: 15px;
+}
+
+.seeker p{
+    color: #fff;
+    margin: 0 7px;
+}
+
+.volume{
+    display: flex;
+    justify-content: center;
+}
+
+.speaker i:nth-child(2){
+    display: none;
+}
+
+.volume > div{
+    padding: 0 30px;
+}
+
+.speaker i{
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.minus i,
+.plus i{
+    font-size: 1.2rem;
+    margin-top: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.current{
+    text-align: center;
+    color: #fff;
+}
 
 /* Responsive */
 @media(max-width:1580px){
