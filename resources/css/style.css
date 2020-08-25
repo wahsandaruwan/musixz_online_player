@@ -19,6 +19,7 @@ body{
     background-size: cover;
 }
 
+/* BG Overlay */
 .overlay{
     position: fixed;
     width: 100%;
@@ -143,6 +144,7 @@ body{
     color: #2F8B28;
 }
 
+/* Display | Hide Playlsit */
 #pl-menu:checked ~ .plist{
     left: 0;
 }
@@ -252,6 +254,7 @@ body{
     z-index: 2;
 }
 
+/* Cover Image */
 .cover{
     display: flex;
     justify-content: center;
@@ -276,6 +279,7 @@ body{
     border-radius: 70px;
 }
 
+/* All Controls */
 .controls{
     display: block;
     background: RGBA(53,201,48,0.42);
@@ -285,6 +289,7 @@ body{
     border-radius: 40px;
 }
 
+/* Main Controls */
 .main-controls{
     display: flex;
     justify-content: center;
@@ -315,6 +320,7 @@ body{
     display: none;
 }
 
+/* Seeker | Slider */
 .seeker{
     display: flex;
     width: 400px;
@@ -323,7 +329,10 @@ body{
 
 .seeker .dslider{
     width: 100%;
-    height: 15px;
+    height: 5px;
+    margin-top: 7px;
+    cursor: pointer;
+    -webkit-appearance: none;
 }
 
 .seeker p{
@@ -331,6 +340,44 @@ body{
     margin: 0 7px;
 }
 
+/* Firefox */
+.seeker .dslider::-moz-range-thumb {
+    border: 3px #fff solid;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #35C930;
+    cursor: pointer;
+}
+
+/* Chrome */
+.seeker .dslider::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+.seeker .dslider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 3px #fff solid;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #35C930;
+    margin-top: -6px;
+}
+
+.seeker .dslider:focus {
+    outline: none;
+}
+
+.seeker .dslider:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+/* Volume */
 .volume{
     display: flex;
     justify-content: center;
@@ -358,6 +405,7 @@ body{
     cursor: pointer;
 }
 
+/* Current Songs= */
 .current{
     width: 300px;
     margin: 0 auto;
