@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusixZ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./resources/css/style.css">
+</head>
+<body>
+    <!-- Background Overlay -->
+    <div class="overlay"></div>
+    <!-- Header Section -->
+    <div class="header">
+        <!-- Checkbox for Playlist -->
+        <input type="checkbox" id="pl-menu">
+        <!-- Playlist -->
+        <label for="pl-menu" class="playlist">
+            <i class="fas fa-bars" id="sign-one"></i>
+            <i class="fas fa-times" id="sign-two"></i>
+        </label>
+        <div class="plist">
+            <div class="list">
+                <div class="songs">
+                    <div class="song">
+                        <p>Oneless Lonely : Justin Bieber</p>
+                        <i class="fas fa-play"></i>
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div class="song">
+                        <p>Oneless Lonely : Justin Bieber</p>
+                        <i class="fas fa-play"></i>
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div class="song">
+                        <p>Oneless Lonely : Justin Bieber</p>
+                        <i class="fas fa-play"></i>
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a href="#">Add Songs</a>
+                </div>
+            </div>
+        </div>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="./resources/img/logo.png" alt="">
+        </div>
+        <!-- Social Media -->
+        <ul class="social">
+            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- Player -->
+    <div class="container">
+        <!-- Cover -->
+        <div class="cover">
+            <img src="./resources/img/bg.jpg" alt="">
+        </div>
+        <!-- Player Controls -->
+        <div class="controls">
+            <div class="main-controls">
+                <div class="shuffle">
+                    <i class="fas fa-random"></i>
+                </div>
+                <div class="prev">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="play-pause">
+                    <i class="fas fa-play-circle"></i>
+                    <i class="fas fa-pause-circle"></i>
+                </div>
+                <div class="next">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="repeat">
+                    <i class="fas fa-redo"></i>
+                </div>
+            </div>
+            <div class="seeker"></div>
+            <div class="volume"></div>
+        </div>
+        <!-- Current Song -->
+        <div class="current"></div>
+    </div>
+</body>
+</html>
