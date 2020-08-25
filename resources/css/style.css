@@ -77,6 +77,7 @@ body{
     position: fixed;
     top: 0;
     left: -100%;
+    z-index: 6;
     width: 350px;
     height: 100%;
     background: #45C52C;
@@ -197,7 +198,7 @@ body{
 .container{
     display: block;
     position: relative;
-    z-index: 12;
+    z-index: 2;
 }
 
 .cover{
@@ -231,6 +232,7 @@ body{
 .main-controls > div i{
     font-size: 1.8rem;
     color: #fff;
+    cursor: pointer;
 }
 
 .play-pause i:nth-child(2){
